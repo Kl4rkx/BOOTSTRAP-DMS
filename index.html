@@ -15,55 +15,51 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item me-4">
                         <a class="nav-link active" aria-current="page" href="#">Novedades</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item me-4">
                         <a class="nav-link" href="#">Lanzamientos</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Precios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Desactivado</a>
-                    </li> -->
                 </ul>
-                <button type="button" class="btn btn-light ms-10" data-bs-toggle="modal" data-bs-target="#loginModal">
+                <button type="button" class="btn btn-light me-5" data-bs-toggle="modal" data-bs-target="#loginModal">
                     Login
                 </button>
             </div>
         </div>
     </nav>
 
-    <!-- Carrusel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/banners/banner-1-ts.png" class="d-block w-100 img-fluid" alt="..." >
-            </div>
-            <div class="carousel-item">
-                <img src="img/banners/banner-2-ts-utopia.jpeg" class="d-block w-100 img-fluid" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/banners/banner-3-feid.jpg" class="d-block w-100 img-fluid" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-        </button>
+<!-- Carrusel -->
+<div id="carouselExampleIndicators" class="carousel slide" style="height: 500px;" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
+    <div class="carousel-inner h-100">
+        <div class="carousel-item active h-100">
+            <img src="img/banners/banner-1-ts.png" class="d-block w-100 h-100 img-fluid" alt="..." style="object-fit: contain;">
+        </div>
+        <div class="carousel-item h-100">
+            <img src="img/banners/banner-2-ts-utopia.jpeg" class="d-block w-100 h-100 img-fluid" alt="..." style="object-fit: contain;">
+        </div>
+        <div class="carousel-item h-100">
+            <img src="img/banners/banner-3-feid.jpg" class="d-block w-100 h-100 img-fluid" alt="..." style="object-fit: contain;">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+
+
 
 
     <!-- Modal de Login -->
