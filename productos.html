@@ -10,6 +10,26 @@
     <link rel="manifest" href="img/logo/site.webmanifest">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
+        .toast-success {
+            background-color: #28a745;
+            color: white;
+        }
+        .card-custom {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card-custom .card-body {
+            padding: 2rem;
+        }
+        .progress-custom {
+            height: 25px;
+            border-radius: 12px;
+            background-color: #e9ecef;
+        }
+        .progress-bar-custom {
+            border-radius: 12px;
+        }
         .offcanvas-body a {
             font-size: 1.2rem;
             font-weight: 500;
@@ -19,10 +39,29 @@
             display: block;
             padding: 0.5rem 1rem;
             border-radius: 8px;
+            position: relative;
+        }
+        .offcanvas-body a::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #28a745;
+            transition: width 0.3s;
+        }
+        .offcanvas-body a:hover::before, 
+        .offcanvas-body a.active::before {
+            width: 100%;
         }
         .offcanvas-body a:hover {
-            background-color: #f8f9fa;
+            background-color: #e9ecef;
             color: #28a745;
+        }
+        .offcanvas-body a.active {
+            color: #28a745;
+            background-color: #e9ecef;
         }
     </style>
 </head>
@@ -53,7 +92,7 @@
             <a class="link-dark" href="index.html" role="button">Inicio</a>
             <a class="link-dark" href="dashboard.html" role="button">Dashboard</a>
             <a class="link-dark" href="usuarios.html" role="button">Usuarios</a>
-            <a class="link-dark" href="productos.html" role="button">Productos</a>
+            <a class="link-dark active" href="productos.html" role="button">Productos</a>
         </div>
     </div>
     
@@ -64,24 +103,38 @@
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Todos los Usuarios
+                    Vinilos Disponibles
                 </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <strong>Esta es la lista de todos los usuarios registrados.</strong> Puedes gestionar la información de los usuarios aquí.
+                    <strong>Lista de vinilos disponibles.</strong> Aquí puedes gestionar el inventario de vinilos y sus precios.
+                    <ul>
+                        <li>Travis Scott - Astroworld: $20</li>
+                        <li>Feid - Ferxxo (Vol. 1): $25</li>
+                        <li>J Balvin - Colores: $22</li>
+                        <li>Ryan Castro - Hits Collection: $18</li>
+                        <li>Saiko - Saiko World: $24</li>
+                    </ul>
                 </div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Todos los Cantantes
+                    Entradas para Conciertos
                 </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <strong>Esta es la lista de todos los cantantes registrados.</strong> Puedes gestionar la información de los cantantes aquí.
+                    <strong>Lista de conciertos disponibles.</strong> Aquí puedes gestionar la venta de entradas para conciertos.
+                    <ul>
+                        <li>Concierto de Travis Scott - 12 de Julio: $50</li>
+                        <li>Concierto de Feid - 24 de Septiembre: $45</li>
+                        <li>Concierto de J Balvin - 16 de Noviembre: $55</li>
+                        <li>Concierto de Ryan Castro - 22 de Octubre: $40</li>
+                        <li>Concierto de Saiko - 5 de Diciembre: $50</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -90,7 +143,7 @@
     </div>
 
     <!-- Scripts de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"></script>
     
 </body>
 </html>
