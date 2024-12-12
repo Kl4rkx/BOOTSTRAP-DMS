@@ -39,10 +39,29 @@
             display: block;
             padding: 0.5rem 1rem;
             border-radius: 8px;
+            position: relative;
+        }
+        .offcanvas-body a::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #28a745;
+            transition: width 0.3s;
+        }
+        .offcanvas-body a:hover::before, 
+        .offcanvas-body a.active::before {
+            width: 100%;
         }
         .offcanvas-body a:hover {
-            background-color: #f8f9fa;
+            background-color: #e9ecef;
             color: #28a745;
+        }
+        .offcanvas-body a.active {
+            color: #28a745;
+            background-color: #e9ecef;
         }
     </style>
 </head>
@@ -71,7 +90,7 @@
         </div>
         <div class="offcanvas-body">
             <a class="link-dark" href="index.html" role="button">Inicio</a>
-            <a class="link-dark" href="dashboard.html" role="button">Dashboard</a>
+            <a class="link-dark active" href="dashboard.html" role="button">Dashboard</a>
             <a class="link-dark" href="usuarios.html" role="button">Usuarios</a>
             <a class="link-dark" href="productos.html" role="button">Productos</a>
         </div>
