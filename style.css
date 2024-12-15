@@ -1,0 +1,135 @@
+.btn-green {
+    background-color: #28a745;
+    color: white;
+}
+.card {
+    background: #f8f9fa; /* light grey */
+}
+.toast-success {
+    background-color: #28a745;
+    color: white;
+}
+.card-custom {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-custom .card-body {
+    padding: 2rem;
+}
+.progress-custom {
+    height: 25px;
+    border-radius: 12px;
+    background-color: #e9ecef;
+}
+.progress-bar-custom {
+    border-radius: 12px;
+}
+.offcanvas-body a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #343a40;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    position: relative;
+}
+.offcanvas-body a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #28a745;
+    transition: width 0.3s;
+}
+.offcanvas-body a:hover::before, 
+.offcanvas-body a.active::before {
+    width: 100%;
+}
+.offcanvas-body a:hover {
+    background-color: #e9ecef;
+    color: #28a745;
+}
+.offcanvas-body a.active {
+    color: #28a745;
+    background-color: #e9ecef;
+}
+
+.toast-success {
+    background-color: #28a745;
+    color: white;
+}
+.offcanvas-body a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #343a40;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    position: relative;
+}
+.offcanvas-body a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #28a745;
+    transition: width 0.3s;
+}
+.offcanvas-body a:hover::before, 
+.offcanvas-body a.active::before {
+    width: 100%;
+}
+.offcanvas-body a:hover {
+    background-color: #e9ecef;
+    color: #28a745;
+}
+.offcanvas-body a.active {
+    color: #28a745;
+    background-color: #e9ecef;
+}
+.toast-success {
+    background-color: #28a745;
+    color: white;
+}
+.offcanvas-body a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #343a40;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    position: relative;
+}
+.offcanvas-body a::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #28a745;
+    transition: width 0.3s;
+}
+.offcanvas-body a:hover::before, 
+.offcanvas-body a.active::before {
+    width: 100%;
+}
+.offcanvas-body a:hover {
+    background-color: #e9ecef;
+    color: #28a745;
+}
+.offcanvas-body a.active {
+    color: #28a745;
+    background-color: #e9ecef;
+}
