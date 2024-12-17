@@ -16,6 +16,16 @@
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-custom:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.85);
 }
 
 .card-custom .card-body {
@@ -151,6 +161,102 @@
 }
 
 .table-success {
-    background-color: #28a745 !important;
+    background-color: #d4edda !important;
+}
+
+/* Centrar el texto en los encabezados de la tabla */
+.table thead th {
+    text-align: center;
+}
+
+/* Centrar verticalmente el contenido de las celdas */
+.table tbody td {
+    vertical-align: middle;
+}
+
+/* Centrar el contenido dentro de .action-buttons */
+.action-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo personalizado para la tabla */
+.table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.table thead {
+    background-color: #343a40;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.table thead th {
+    border: none;
+}
+
+.table tbody tr {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    margin-bottom: 10px; /* Add margin to create space between rows */
+}
+
+.table tbody tr:hover {
+    background-color: #e9ecef; /* Change background color on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+}
+
+
+/* Fondo personalizado para el dashboard */
+body.dashboard {
+    background-image: url('img/backgrounds/tu-imagen-de-fondo.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    color: #fff;
+}
+
+/* Superposición oscura para mejorar la legibilidad */
+body.dashboard::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según sea necesario */
+    z-index: -1;
+}
+
+/* Estilos para el texto del dashboard */
+body.dashboard h1,
+body.dashboard p {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilos para mejorar la visibilidad de la tarjeta */
+.card-custom {
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Fondo personalizado para el dashboard */
+body.dashboard {
+    background-image: url('img/banners/banner-dashboard-ts.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
 }
 
