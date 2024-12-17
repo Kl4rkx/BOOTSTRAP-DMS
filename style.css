@@ -133,3 +133,101 @@
     color: #28a745;
     background-color: #e9ecef;
 }
+
+.btn-warning-custom {
+    background-color: #ffc107;
+    color: #343a40;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-warning-custom:hover {
+    background-color: #e0a800;
+    color: white;
+}
+
+.btn-danger-custom {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-danger-custom:hover {
+    background-color: #c82333;
+    color: white;
+}
+
+.form-check-input-custom {
+    width: 2rem;
+    height: 1rem;
+    background-color: #e9ecef;
+    border-radius: 1rem;
+    transition: background-color 0.3s;
+}
+.form-check-input-custom:checked {
+    background-color: #28a745;
+}
+/* ...existing styles... */
+.action-buttons .btn {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.action-buttons .form-check {
+    margin-left: 5px;
+}
+
+.deactivated .action-buttons .btn {
+    background-color: transparent;
+    color: white;
+}
+
+.deactivated .action-buttons .btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.deactivated .form-check-input-custom {
+    background-color: #6c757d;
+}
+
+.deactivated .form-check-input-custom:checked {
+    background-color: #28a745;
+}
+
+/* ...existing styles... */
+.table-success {
+    background-color: #28a745 !important; /* Adjust the color as needed */
+}
+
+/* Efectos hover para iconos de acción en filas activadas */
+.table-success .action-buttons .btn:hover {
+    color: #fff;
+    background-color: #17a2b8; /* Cambiar a un tono azul */
+    transform: scale(1.1) rotate(-5deg); /* Aumentar tamaño y rotar */
+    box-shadow: 0 0 10px rgba(23, 162, 184, 0.5); /* Añadir sombra */
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+.deactivated {
+    background-color: #343a40; /* Dark background for deactivated rows */
+}
+
+.deactivated .action-buttons .btn {
+    background-color: transparent;
+    color: white;
+}
+
+.deactivated .action-buttons .btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Efectos hover para iconos de acción en filas desactivadas */
+.deactivated .action-buttons .btn:hover {
+    color: #ffc107; /* Cambiar color del icono a amarillo */
+    background-color: #444; /* Fondo gris oscuro */
+    transform: scale(1.1) rotate(5deg); /* Aumentar tamaño y rotar */
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.5); /* Añadir sombra amarilla */
+    transition: transform 0.2s, background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+/* ...existing styles... */
