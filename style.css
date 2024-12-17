@@ -208,8 +208,13 @@
 .table tbody tr:hover {
     background-color: #e9ecef; /* Change background color on hover */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+    transform: scale(1.02); /* Slightly scale up the row */
+    transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 
+.table tbody th {
+    text-align: center; /* Center align the ID numbers */
+}
 
 /* Fondo personalizado para el dashboard */
 body.dashboard {
@@ -258,5 +263,15 @@ body.dashboard {
     background-position: center;
     background-attachment: fixed;
     color: #fff;
+}
+
+body.dashboard .navbar.bg-dark {
+    background-color: rgba(0, 0, 0, 0.8) !important; /* Make the navbar slightly transparent only on the dashboard page */
+}
+
+@media (max-width: 767.98px) {
+    .card-custom {
+        margin-bottom: 1rem; /* Add margin to separate cards on mobile */
+    }
 }
 
