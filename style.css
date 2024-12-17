@@ -5,6 +5,13 @@
 
 .card {
     background: #f8f9fa;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Asegurar una transición suave cuando se mueve el mouse */
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .toast-success {
@@ -26,6 +33,7 @@
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     background: rgba(0, 0, 0, 0.85);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
 }
 
 .card-custom .card-body {
@@ -202,18 +210,18 @@
     border-radius: 10px;
     overflow: hidden;
     transition: background-color 0.2s, box-shadow 0.2s;
-    margin-bottom: 10px; /* Add margin to create space between rows */
+    margin-bottom: 10px; /* Añadir margen para crear espacio entre filas */
 }
 
 .table tbody tr:hover {
-    background-color: #e9ecef; /* Change background color on hover */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
-    transform: scale(1.02); /* Slightly scale up the row */
+    background-color: #e9ecef; /* Cambiar color de fondo al pasar el mouse */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Añadir una sombra sutil al pasar el mouse */
+    transform: scale(1.02); /* Aumentar ligeramente el tamaño de la fila */
     transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 
 .table tbody th {
-    text-align: center; /* Center align the ID numbers */
+    text-align: center; /* Alinear el ID al centro */
 }
 
 /* Fondo personalizado para el dashboard */
@@ -266,12 +274,23 @@ body.dashboard {
 }
 
 body.dashboard .navbar.bg-dark {
-    background-color: rgba(0, 0, 0, 0.8) !important; /* Make the navbar slightly transparent only on the dashboard page */
+    background-color: rgba(0, 0, 0, 0.8) !important; /* Hacer la navbar ligeramente transparente solo en la página del dashboard */
+}
+
+body.index {
+    background-image: url('img/banners/banner-index-2-cards-w.jpg'); /* Imagen de fondo para la página de inicio */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar.bg-dark, .footer.bg-dark {
+    background-color: #1c1c1c !important; /* Tono más oscuro de gris */
 }
 
 @media (max-width: 767.98px) {
     .card-custom {
-        margin-bottom: 1rem; /* Add margin to separate cards on mobile */
+        margin-bottom: 1rem; /* Añadir margen para separar las tarjetas en móvil */
     }
 }
 
