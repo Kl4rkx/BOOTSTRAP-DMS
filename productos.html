@@ -55,16 +55,40 @@
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                     <strong>Lista de vinilos disponibles.</strong> Aquí puedes gestionar el inventario de vinilos y sus precios.
-                    <ul>
-                        <li>Travis Scott - Astroworld: $20</li>
-                        <li>Feid - Ferxxo (Vol. 1): $25</li>
-                        <li>J Balvin - Colores: $22</li>
-                        <li>Ryan Castro - Hits Collection: $18</li>
-                        <li>Saiko - Saiko World: $24</li>
-                    </ul>
+                    <table class="table table-bootstrap table-dark mt-3">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-start">Producto</th>
+                                <th scope="col" class="text-start">Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-start">Travis Scott - Astroworld</td>
+                                <td class="text-start">€20</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start">Feid - Ferxxo (Vol. 1)</td>
+                                <td class="text-start">€25</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start">J Balvin - Colores</td>
+                                <td class="text-start">€22</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start">Ryan Castro - Hits Collection</td>
+                                <td class="text-start">€18</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start">Saiko - Saiko World</td>
+                                <td class="text-start">€24</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
+        
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -74,17 +98,53 @@
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                     <strong>Lista de conciertos disponibles.</strong> Aquí puedes gestionar la venta de entradas para conciertos.
-                    <ul>
-                        <li>Concierto de Travis Scott - 12 de Julio: $50</li>
-                        <li>Concierto de Feid - 24 de Septiembre: $45</li>
-                        <li>Concierto de J Balvin - 16 de Noviembre: $55</li>
-                        <li>Concierto de Ryan Castro - 22 de Octubre: $40</li>
-                        <li>Concierto de Saiko - 5 de Diciembre: $50</li>
-                    </ul>
+                    <table class="table table-bootstrap table-dark mt-3">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-start">Concierto</th>
+                                <th scope="col" class="text-start">Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-start">Concierto de Travis Scott - 12 de Julio</td>
+                                <td class="text-start">€50</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start">Concierto de Feid - 24 de Septiembre</td>
+                                <td class="text-start">€45</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start">Concierto de J Balvin - 16 de Noviembre</td>
+                                <td class="text-start">€55</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start">Concierto de Ryan Castro - 22 de Octubre</td>
+                                <td class="text-start">€40</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start">Concierto de Saiko - 5 de Diciembre</td>
+                                <td class="text-start">€50</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
+    <nav aria-label="Page navigation example" class="fixed-bottom bg-light py-3">
+        <ul class="pagination justify-content-center mb-0 pagination-custom">
+            <li class="page-item">
+                <a class="page-link" href="#">Anterior</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Siguiente</a>
+            </li>
+        </ul>
+    </nav>
     </div>
     </div>
 

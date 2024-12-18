@@ -190,22 +190,22 @@
 }
 
 /* Estilo personalizado para la tabla */
-.table {
+.table:not(.table-bootstrap) {
     border-collapse: separate;
     border-spacing: 0 10px;
 }
 
-.table thead {
+.table:not(.table-bootstrap) thead {
     background-color: #343a40;
     color: #fff;
     border-radius: 10px;
 }
 
-.table thead th {
+.table:not(.table-bootstrap) thead th {
     border: none;
 }
 
-.table tbody tr {
+.table:not(.table-bootstrap) tbody tr {
     background-color: #f8f9fa;
     border-radius: 10px;
     overflow: hidden;
@@ -213,14 +213,14 @@
     margin-bottom: 10px; /* Añadir margen para crear espacio entre filas */
 }
 
-.table tbody tr:hover {
+.table:not(.table-bootstrap) tbody tr:hover {
     background-color: #e9ecef; /* Cambiar color de fondo al pasar el mouse */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Añadir una sombra sutil al pasar el mouse */
     transform: scale(1.02); /* Aumentar ligeramente el tamaño de la fila */
     transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 
-.table tbody th {
+.table:not(.table-bootstrap) tbody th {
     text-align: center; /* Alinear el ID al centro */
 }
 
@@ -293,4 +293,25 @@ body.index {
         margin-bottom: 1rem; /* Añadir margen para separar las tarjetas en móvil */
     }
 }
+
+/* ...existing code... */
+
+.pagination-custom .page-item .page-link {
+    background-color: #343a40;
+    color: #fff;
+    border: 1px solid #343a40;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination-custom .page-item .page-link:hover {
+    background-color: #495057;
+    color: #fff;
+}
+
+.pagination-custom .page-item.active .page-link {
+    background-color: #495057;
+    border-color: #495057;
+}
+
+/* ...existing code... */
 
