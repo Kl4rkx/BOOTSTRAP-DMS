@@ -302,6 +302,14 @@ body.index {
     background-attachment: fixed;
 }
 
+body.productos {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #000000;
+}
+
 .navbar.bg-dark, .footer.bg-dark {
     background-color: #1c1c1c !important; /* Tono más oscuro de gris */
 }
