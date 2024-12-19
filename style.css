@@ -1,6 +1,24 @@
 .btn-green {
     background-color: #28a745;
     color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-green::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: green;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-green:focus::after,
+.btn-green:active::after {
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .card {
@@ -313,5 +331,5 @@ body.index {
     border-color: #495057;
 }
 
-/* ...existing code... */
+
 
