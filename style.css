@@ -331,5 +331,91 @@ body.index {
     border-color: #495057;
 }
 
+.login-modal-content {
+    position: relative;
+    background: url('img/modals/login-3.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.login-modal-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.login-modal-content .modal-header,
+.login-modal-content .modal-body {
+    position: relative;
+    z-index: 2;
+}
+
+.login-modal-content .nav-link {
+    color: #fff;
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.login-modal-content .nav-link.active {
+    color: #202020;
+    border-bottom: 2px solid #686868;
+}
+
+.login-modal-content .nav-link:hover {
+    color: #9c9c9c;
+}
+
+.login-modal-content .form-control {
+    background: #2c2c2c;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.login-modal-content .form-control:focus {
+    background: #2c2c2c;
+    color: #fff;
+    border-color: #28a745;
+    box-shadow: none;
+}
+
+.login-modal-content .btn-dark {
+    background: #28a745;
+    border: none;
+    transition: background 0.3s;
+}
+
+.login-modal-content .btn-dark:hover {
+    background: #218838;
+}
+
+.login-modal-content .btn-custom-light {
+    background: #f8f9fa;
+    color: #343a40;
+    border: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.login-modal-content .btn-custom-light:hover {
+    background: #e9ecef;
+    color: #212529;
+}
+
+.btn-close-white {
+    filter: invert(1);
+}
+
+/* ...existing code... */
+
 
 
