@@ -411,6 +411,46 @@ body.index {
     color: #212529;
 }
 
+.cart-modal-content {
+    position: relative;
+    background: url('img/modals/login-svg.svg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.cart-modal-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Dark overlay */
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.cart-modal-content .modal-header,
+.cart-modal-content .modal-body,
+.cart-modal-content .modal-footer {
+    position: relative;
+    z-index: 2;
+}
+
+.cart-modal-content .btn-custom-light {
+    background: #f8f9fa;
+    color: #343a40;
+    border: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.cart-modal-content .btn-custom-light:hover {
+    background: #e9ecef;
+    color: #212529;
+}
+
 .btn-close-white {
     filter: invert(1);
 }
