@@ -1,8 +1,10 @@
+// Variables para los elementos del modal de login/registro
 const myTab = document.getElementById('myTab');
 const modalActionButton = document.getElementById('modalActionButton');
 const loginTab = document.getElementById('login-tab');
 const registerTab = document.getElementById('register-tab');
 
+// Evento para cambiar el texto del botón de acción en el modal de login/registro
 myTab.addEventListener('click', (event) => {
     const activeTab = event.target.id;
     if (activeTab === 'register-tab') {
@@ -16,13 +18,16 @@ myTab.addEventListener('click', (event) => {
     }
 });
 
+// Función para redirigir al dashboard
 function redirectToDashboard(event) {
     event.preventDefault();
     window.location.href = 'dashboard.html';
 }
 
+// Contador de productos en el carrito
 let cartCount = 0;
 
+// Función para añadir productos al carrito
 function addToCart(productName, productImage, productPrice) {
     cartCount++;
     document.getElementById('cart-count').textContent = cartCount;
@@ -36,11 +41,27 @@ function addToCart(productName, productImage, productPrice) {
             <span class="ms-3">${productName}</span>
         </div>
         <span>${productPrice}</span>
+        <button class="btn btn-danger btn-sm ms-3" onclick="removeFromCart(this)">
+            <i class="fas fa-trash-alt"></i>
+        </button>
     `;
     cartItems.appendChild(cartItem);
 }
 
-// Asegurarse de que no se añadan múltiples event listeners
+// Función para eliminar productos del carrito
+function removeFromCart(button) {
+    const cartItem = button.closest('li');
+    cartItem.remove();
+    cartCount--;
+    document.getElementById('cart-count').textContent = cartCount;
+}
+
+// Función para proceder al pago y redirigir al dashboard
+function proceedToCheckout() {
+    window.location.href = 'dashboard.html';
+}
+
+// Añadir event listeners a los botones de "Comprar Vinilo" y "Comprar Entrada"
 document.querySelectorAll('.btn-green').forEach(button => {
     button.onclick = (event) => {
         const card = event.target.closest('.card');
